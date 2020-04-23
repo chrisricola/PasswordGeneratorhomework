@@ -21,3 +21,14 @@ generateBtn.addEventListener("click", writePassword);
 // numbers or characters, if they do want numbers and or characters then if true,
 // add to the formula, now to figure out the formula and prompts.
 // add characters to math.random * character length
+
+// var Upper = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+// var Lower = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+// var Num = [1,2,3,4,5,6,7,8,9];
+// var Char = ["!",@,#,$,%,^,&,*,?,];
+//  var pwd = [];
+//  var howMany = prompt("how many charcters for your password? Has to be between 8-128");
+//  var chooseUpper = confirm("Do you want Uppercase?");
+//  var chooseLower = confirm("Do you want Lowercase?");
+//  var chooseNum = confirm("Do you want numbers?");
+//  var chooseChar = confirm("Do you want characters?");
