@@ -37,19 +37,19 @@ function generatePassword(){
 // //
 // //  TWO ARE CHOSEN
 else if (chooseUpper && chooseNum) {
-   pick = Char.concat(Upper,Num)
+   pick = Char.concat(Upper)
 }
-else if (chooseUpper && chooseNum) {
-   pick = Char.concat(Upper,Num)
+else if (chooseUpper && chooseChar) {
+   pick = Char.concat(Upper)
 }
-else if (chooseLower && chooseNum) {
-   pick = Char.concat(Lower,Num)
-}
-else if (chooseLower && chooseNum) {
-   pick = Char.concat(Lower,Num)
+else if (chooseLower && chooseChar) {
+   pick = Char.concat(Lower)
 }
 else if (chooseLower && chooseNum) {
-   pick = Char.concat(Lower,Num)
+   pick = Num.concat(Lower)
+}
+else if (chooseChar && chooseNum) {
+   pick = Char.concat(Num)
 }
 
 
