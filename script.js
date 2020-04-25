@@ -14,44 +14,60 @@ function generatePassword(){
  var chooseLower = confirm("Do you want Lowercase?");
  var chooseNum = confirm("Do you want numbers?");
  var chooseChar = confirm("Do you want characters?");
+ var pick = [];
 // // ALL PROMPTS ARE TRUE 
  if (chooseUpper === "true" && chooseLower === "true" && chooseNum === "true" && chooseChar === "true"){
-  var pick = Num.concat(Upper,Lower,char)
+    pick = Num.concat(Upper,Lower,char)
 }
 
 // //  THREE PROMPTS WERE CHOSEN 
 // //
  else if (chooseUpper && chooseLower && chooseNum) {
-   var pick = Num.concat(Upper,Lower);
+    pick = Num.concat(Upper,Lower);
  }
  else if (chooseUpper && chooseLower && chooseChar) {
-   var pick = Char.concat(Upper,Lower);
+    pick = Char.concat(Upper,Lower);
  }
  else if (chooseLower && chooseNum && chooseChar) {
-   var pick = Char.concat(Lower,Num)
+   pick = Char.concat(Lower,Num)
  }
  else if (chooseUpper && chooseNum && chooseChar) {
-   var pick = Char.concat(Upper,Num)
+    pick = Char.concat(Upper,Num)
  }
 // //
 // //  TWO ARE CHOSEN
+else if (chooseUpper && chooseNum) {
+   pick = Char.concat(Upper,Num)
+}
+else if (chooseUpper && chooseNum) {
+   pick = Char.concat(Upper,Num)
+}
+else if (chooseLower && chooseNum) {
+   pick = Char.concat(Lower,Num)
+}
+else if (chooseLower && chooseNum) {
+   pick = Char.concat(Lower,Num)
+}
+else if (chooseLower && chooseNum) {
+   pick = Char.concat(Lower,Num)
+}
 
 
 // // ONE IS CHOSEN
 
  else if (chooseUpper){
-  var pick = Upper
+   pick = Upper
   var rand = pick[Math.floor(Math.random() * pick.lenght)]
   password.push(rand)
  }
  else if (chooseLower){
-   var pick = Lower
+  pick = Lower
  }
  else if (chooseNum){
-   var pick = Num
+    pick = Num
  }
  else if (chooseChar){
-   var pick = Char
+   pick = Char
  }
 
 console.log(pick)
