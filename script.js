@@ -15,7 +15,9 @@ function generatePassword(){
  var chooseNum = confirm("Do you want numbers?");
  var chooseChar = confirm("Do you want characters?");
  var pick = [];
-// // ALL PROMPTS ARE TRUE 
+// In this section the tutor helped me out. I know it looks sloppy, but the tutor said if it works
+// dont change it because could mess things up. But essentially the Variables  that are choosen are equal too true. 
+// ALL FOUR ARE CHOSEN 
  if (chooseUpper === "true" && chooseLower === "true" && chooseNum === "true" && chooseChar === "true"){
     pick = Num.concat(Upper,Lower,char)
 }
@@ -35,7 +37,7 @@ function generatePassword(){
     pick = Char.concat(Upper,Num)
  }
 // //
-// //  TWO ARE CHOSEN
+// //  TWO CHARACTERS ARE CHOSEN
 else if (chooseUpper && chooseNum) {
    pick = Char.concat(Upper)
 }
@@ -51,14 +53,15 @@ else if (chooseLower && chooseNum) {
 else if (chooseChar && chooseNum) {
    pick = Char.concat(Num)
 }
+else if (chooseUpper && chooseLower) {
+   pick = Upper.concat(Lower)
+}
 
 
 // // ONE IS CHOSEN
 
  else if (chooseUpper){
    pick = Upper
-  var rand = pick[Math.floor(Math.random() * pick.lenght)]
-  password.push(rand)
  }
  else if (chooseLower){
   pick = Lower
